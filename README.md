@@ -1,69 +1,79 @@
 # ForecastForge
 
-**Hybrid Time Series Forecasting Framework**
+**A Hybrid Time Series Forecasting Framework for Real-World Use Cases**
 
-ForecastForge is a modular and extensible framework designed to tackle complex time series forecasting challenges across diverse domains such as energy consumption, stock prices, traffic flow, and weather patterns. By integrating classical machine learning models, deep learning architectures, and ensemble methods, ForecastForge aims to deliver robust and accurate forecasts.
+ForecastForge is an extensible, research-inspired framework built to tackle complex forecasting problems found in industries like energy, finance, transportation, and meteorology. It integrates traditional machine learning and modern deep learning models, layered with powerful ensemble techniques, to deliver high-performance forecasts on real-world datasets.
 
 ---
 
 ## 🚀 Project Overview
 
-Time series forecasting is pivotal in numerous industries, yet it poses challenges due to data volatility, seasonality, and noise. ForecastForge addresses these challenges by:
+Time series data is everywhere—from electricity consumption and traffic congestion to stock fluctuations and climate monitoring. Yet forecasting such data is inherently difficult due to non-linearity, noise, and abrupt pattern changes.
 
-- Implementing a variety of forecasting models including LSTM, Transformer, XGBoost, and LiquidML.
-- Exploring ensemble techniques to combine predictions from multiple models for improved accuracy.
-- Providing a structured approach to model evaluation and comparison across different datasets.
+**ForecastForge is built to address this challenge through:**
+
+- A modular architecture that supports classical, deep learning, and hybrid models.
+- A comparative framework that evaluates model performance on diverse datasets.
+- An emphasis on ensemble methods to combine strengths of individual models.
 
 ---
 
 ## 🧠 Models Implemented
 
 ### 1. LSTM (Long Short-Term Memory)
-- Captures temporal dependencies in sequential data.
-- Applied to energy, stock, traffic, and weather datasets.
+- Designed for capturing long-term dependencies in sequential data.
+- Deployed across datasets like weather, stock, traffic, and energy.
 
 ### 2. Transformer
-- Utilizes self-attention mechanisms for sequence modeling.
-- Adapted for time series forecasting tasks.
+- Uses self-attention mechanisms for sequence modeling.
+- Adapted for univariate time series forecasting tasks.
 
 ### 3. XGBoost
-- Gradient boosting framework optimized for speed and performance.
-- Effective for structured data and time series regression.
+- A high-performance boosting algorithm effective on structured temporal data.
+- Used as a baseline and ensemble input.
 
-### 4. LiquidML
-- Custom ensemble approach integrating multiple model predictions.
-- Enhances robustness and generalization.
+### 4. LiquidML (Custom Meta-Ensemble)
+- ForecastForge’s core ensemble learner.
+- Aggregates predictions across models using Caruana’s Ensemble Selection, optimized for RMSE.
 
-### 5. Ensemble Methods
-- Explored various techniques including:
+### 5. Ensemble Methods Explored
+- Caruana’s Ensemble Selection ✅ *(Best Performer – used in final evaluation)*
+- Others (archived under `Deprecated Ensembles/`):
   - Bayesian Model Averaging
+  - Weighted Voting
   - Blending
   - Median Ensemble
-  - Stacked Ensemble
-  - Stacked Weighted Voting
   - Voting
+  - Stacked Ensemble
   - Weighted Averaging
-  - Weighted Voting
-  - ✅ **Caruana’s Ensemble Selection** *(Best Performer – used in final evaluation)*
-
-> **Note**: All ensemble methods except Caruana’s are archived under `Deprecated Ensembles`.
+  - Stacked Weighted Voting
 
 ---
 
 ## 📊 Datasets
 
-- `AEP_hourly_processed.xlsx`: Hourly energy consumption data.
-- `Tesla_Stock.xlsx`: Historical stock prices of Tesla.
-- `jena_climate.xlsx`: Weather data from the Jena Climate dataset.
-- `traffic.xlsx`: Traffic flow data.
+ForecastForge uses pre-cleaned datasets reflecting real-world forecasting challenges:
 
-*All datasets are preprocessed and stored in the `datasets/` directory.*
+- `AEP_hourly_processed.xlsx`: Hourly U.S. electricity consumption data.
+- `Tesla_Stock.xlsx`: Daily Tesla stock prices.
+- `jena_climate.xlsx`: Environmental sensor data from Jena, Germany.
+- `traffic.xlsx`: Hourly road traffic volume dataset.
+
+➡ All datasets are stored under `datasets/` in ready-to-use format.
 
 ---
 
 ## 📈 Evaluation Metrics
 
-Model performance is evaluated using **Root Mean Square Error (RMSE)**. Results are stored in respective `RMSE_*.json` files within each model's directory.
+ForecastForge evaluates all models using:
+
+- **Root Mean Square Error (RMSE)**: Primary metric for accuracy.
+- Results are saved in individual `RMSE_*.json` files within each model’s subdirectory.
+
+📊 Below is a comparative performance chart of all implemented models on the stock dataset:
+
+![Model Comparison Plot](Plots/plot_3.png)  
+*Lower RMSE indicates better performance.*
 
 ---
 
@@ -97,13 +107,13 @@ Make sure Jupyter Notebook is installed in your environment.
 
 ## 📌 Key Features
 
-- Modular design facilitating easy addition and evaluation of new models.
+- ✅ **Model Modularity**: Add or remove models without changing the core workflow.
 
-- Comprehensive exploration of ensemble methods.
+- ✅ **Ensemble Experimentation**: 9 ensemble strategies implemented and evaluated.
 
-- Organized directory structure for clarity and ease of navigation.
+- ✅ **Real-World Readiness**: Focused on robustness, not just benchmark datasets.
 
-- Preprocessed datasets ready for immediate use.
+- ✅ **Organized Repo**: Clear directory structure and reproducible pipelines.
 
 ---
 
