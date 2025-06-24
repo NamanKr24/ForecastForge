@@ -77,6 +77,21 @@ ForecastForge evaluates all models using:
 
 ---
 
+## 🌐 Gradio Interface
+
+A clean Gradio-based web app allows users to:
+
+- Select the dataset.
+
+- Choose which models to incorporate in the ensemble
+
+- Live Demo:    [![Gradio App](https://img.shields.io/badge/Try%20on-Gradio-blue?logo=gradio)](https://huggingface.co/spaces/namankr24/ForecastForge).
+
+- Interface Preview of the Gradio App
+  ![app_preview](app_preview.png)
+
+---
+
 ## 🛠️ Setup Instructions
 
 1. **Clone the Repository**
