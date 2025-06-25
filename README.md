@@ -72,7 +72,7 @@ ForecastForge evaluates all models using:
 
 📊 Below is a comparative performance chart of all implemented models on the stock dataset:
 
-![Model Comparison Plot](sample_plot.png)  
+![Model Comparison Plot](images/sample_plot.png)  
 *Lower RMSE indicates better performance.*
 
 ---
@@ -88,7 +88,7 @@ A clean Gradio-based web app allows users to:
 - Live Demo:    [![Gradio App](https://img.shields.io/badge/Try%20on-Gradio-blue?logo=gradio)](https://huggingface.co/spaces/namankr24/ForecastForge).
 
 - Interface Preview of the Gradio App
-  ![app_preview](app_preview.png)
+  ![app_preview](images/app_preview.png)
 
 ---
 
