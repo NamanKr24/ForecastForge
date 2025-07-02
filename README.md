@@ -4,8 +4,6 @@
 
 ForecastForge is an extensible, research-inspired framework built to tackle complex forecasting problems found in industries like energy, finance, transportation, and meteorology. It integrates traditional machine learning and modern deep learning models, layered with powerful ensemble techniques, to deliver high-performance forecasts on real-world datasets.
 
----
-
 ## 🚀 Project Overview
 
 Time series data is everywhere—from electricity consumption and traffic congestion to stock fluctuations and climate monitoring. Yet forecasting such data is inherently difficult due to non-linearity, noise, and abrupt pattern changes.
@@ -15,8 +13,6 @@ Time series data is everywhere—from electricity consumption and traffic conges
 - A modular architecture that supports classical, deep learning, and hybrid models.
 - A comparative framework that evaluates model performance on diverse datasets.
 - An emphasis on ensemble methods to combine strengths of individual models.
-
----
 
 ## 🧠 Models Implemented
 
@@ -48,8 +44,6 @@ Time series data is everywhere—from electricity consumption and traffic conges
   - Weighted Averaging
   - Stacked Weighted Voting
 
----
-
 ## 📊 Datasets
 
 ForecastForge uses pre-cleaned datasets reflecting real-world forecasting challenges:
@@ -60,8 +54,6 @@ ForecastForge uses pre-cleaned datasets reflecting real-world forecasting challe
 - `traffic.xlsx`: Hourly road traffic volume dataset.
 
 ➡ All datasets are stored under `datasets/` in ready-to-use format.
-
----
 
 ## 📈 Evaluation Metrics
 
@@ -75,8 +67,6 @@ ForecastForge evaluates all models using:
 ![Model Comparison Plot](images/sample_plot.png)  
 *Lower RMSE indicates better performance.*
 
----
-
 ## 🌐 Gradio Interface
 
 A clean Gradio-based web app allows users to:
@@ -89,8 +79,6 @@ A clean Gradio-based web app allows users to:
 
 - Interface Preview of the Gradio App
   ![app_preview](images/app_preview.png)
-
----
 
 ## 🛠️ Setup Instructions
 
@@ -118,8 +106,6 @@ A clean Gradio-based web app allows users to:
 
 Make sure Jupyter Notebook is installed in your environment.
 
----
-
 ## 📌 Key Features
 
 - ✅ **Model Modularity**: Add or remove models without changing the core workflow.
@@ -130,7 +116,6 @@ Make sure Jupyter Notebook is installed in your environment.
 
 - ✅ **Organized Repo**: Clear directory structure and reproducible pipelines.
 
----
 
 ## 🤝 Contributing
 
@@ -155,13 +140,9 @@ Contributions are welcome! Please follow these steps:
 
 5. Open a pull request.
 
----
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
 
 ## 📬 Contact
 
