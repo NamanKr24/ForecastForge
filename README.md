@@ -68,7 +68,8 @@ ForecastForge evaluates all models using:
 
 📊 Below is a comparative performance chart of all implemented models on the stock dataset:
 
-![Model Comparison Plot](images/sample_plot.png)  
+![Model Comparison Plot](images/sample_plot.png)
+---
 *Lower RMSE indicates better performance.*
 
 
