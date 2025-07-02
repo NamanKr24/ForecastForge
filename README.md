@@ -125,6 +125,17 @@ Make sure Jupyter Notebook is installed in your environment.
 - ✅ **Organized Repo**: Clear directory structure and reproducible pipelines.
 
 
+
+## 📊 Acknowledgements
+
+All four datasets were taken from Kaggle datasets.
+
+- [AEP_hourly](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption)
+- [Tesla_Stock](https://www.kaggle.com/datasets/jillanisofttech/tesla-stock-price?select=Tasla_Stock_Updated_V2.csv)
+- [jena_climate](https://www.kaggle.com/datasets/mnassrib/jena-climate)
+- [traffic](https://www.kaggle.com/datasets/fedesoriano/traffic-prediction-dataset)
+
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
