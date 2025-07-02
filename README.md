@@ -4,6 +4,7 @@
 
 ForecastForge is an extensible, research-inspired framework built to tackle complex forecasting problems found in industries like energy, finance, transportation, and meteorology. It integrates traditional machine learning and modern deep learning models, layered with powerful ensemble techniques, to deliver high-performance forecasts on real-world datasets.
 
+
 ## 🚀 Project Overview
 
 Time series data is everywhere—from electricity consumption and traffic congestion to stock fluctuations and climate monitoring. Yet forecasting such data is inherently difficult due to non-linearity, noise, and abrupt pattern changes.
@@ -13,6 +14,7 @@ Time series data is everywhere—from electricity consumption and traffic conges
 - A modular architecture that supports classical, deep learning, and hybrid models.
 - A comparative framework that evaluates model performance on diverse datasets.
 - An emphasis on ensemble methods to combine strengths of individual models.
+
 
 ## 🧠 Models Implemented
 
@@ -44,6 +46,7 @@ Time series data is everywhere—from electricity consumption and traffic conges
   - Weighted Averaging
   - Stacked Weighted Voting
 
+
 ## 📊 Datasets
 
 ForecastForge uses pre-cleaned datasets reflecting real-world forecasting challenges:
@@ -62,10 +65,12 @@ ForecastForge evaluates all models using:
 - **Root Mean Square Error (RMSE)**: Primary metric for accuracy.
 - Results are saved in individual `RMSE_*.json` files within each model’s subdirectory.
 
+
 📊 Below is a comparative performance chart of all implemented models on the stock dataset:
 
 ![Model Comparison Plot](images/sample_plot.png)  
 *Lower RMSE indicates better performance.*
+
 
 ## 🌐 Gradio Interface
 
@@ -79,6 +84,8 @@ A clean Gradio-based web app allows users to:
 
 - Interface Preview of the Gradio App
   ![app_preview](images/app_preview.png)
+---
+  
 
 ## 🛠️ Setup Instructions
 
