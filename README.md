@@ -20,19 +20,19 @@ Time series data is everywhere—from electricity consumption and traffic conges
 
 ### 1. LSTM (Long Short-Term Memory)
 - Designed for capturing long-term dependencies in sequential data.
-- Deployed across datasets like weather, stock, traffic, and energy.
+- Used as a baseline and ensemble input.
 
 ### 2. Transformer
 - Uses self-attention mechanisms for sequence modeling.
-- Adapted for univariate time series forecasting tasks.
+- Used as a baseline and ensemble input.
 
 ### 3. XGBoost
 - A high-performance boosting algorithm effective on structured temporal data.
 - Used as a baseline and ensemble input.
 
-### 4. LiquidML (Custom Meta-Ensemble)
-- ForecastForge’s core ensemble learner.
-- Aggregates predictions across models using Caruana’s Ensemble Selection, optimized for RMSE.
+### 4. Liquid Neural Networks
+- Dynamic and adaptive in nature.
+- Used as a baseline and ensemble input.
 
 ### 5. Ensemble Methods Explored
 - Caruana’s Ensemble Selection ✅ *(Best Performer – used in final evaluation)*
