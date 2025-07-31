@@ -10,7 +10,7 @@ gr.Interface(
     fn=interface,
     inputs=[
         gr.Dropdown(["Energy", "Stock", "Traffic", "Weather"], label="Select Dataset"),
-        gr.CheckboxGroup(["LSTM", "Transformer", "LiquidML", "XGBoost"], label="Select Models")
+        gr.CheckboxGroup(["LSTM", "Transformer", "LNN", "XGBoost"], label="Select Models")
     ],
     outputs=[
         gr.Text(label="Train RMSE"),
